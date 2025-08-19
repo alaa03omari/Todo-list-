@@ -1,11 +1,11 @@
 import './index.css';
 import TodoList from "./Components/TodoList";
 import { useState } from 'react';
-import { TodosContext } from './Context/TodosContext.jsx';
+import TodosProvider from './Context/TodosContext.jsx';
+import {  ToastProvider } from './Context/ToastContext.jsx';
 function App() {
 
   const [todos, setTodos] = useState([]);
-
 
   const style = {
     display: "flex",
@@ -20,11 +20,16 @@ function App() {
   }
 
   return (
-    <TodosContext.Provider value={{ todos, setTodos }}>
-      <div style={style}>
-        <TodoList />
-      </div >
-    </TodosContext.Provider>
+    <ToastProvider >
+      <>
+        
+        <TodosProvider value={{ todos, setTodos }}>
+          <div style={style}>
+            <TodoList />
+          </div >
+        </TodosProvider>
+      </>
+    </ToastProvider>
   );
 }
 

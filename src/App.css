@@ -49,14 +49,6 @@ h6 {
     -moz-transition: ease 0.3s !important;
     -ms-transition: ease 0.3s !important;
     -o-transition: ease 0.3s !important;
-
-    h6 {
-        color: #fff !important;
-    }
-
-    p {
-        color: #bababa !important;
-    }
 }
 
 .todoCard p::first-letter,
@@ -67,16 +59,6 @@ h6::first-letter {
 .todosContainer {
     max-height: '400px';
     overflow: 'auto';
-}
-
-.active {
-    background-color: #7a7a7a !important;
-    text-decoration: line-through 3px #4c4a4a;
-}
-
-.activeButton {
-    background-color: #8bc34a !important;
-    color: #e8e8e8 !important;
 }
 
 .todoCard:hover {

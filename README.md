@@ -8,7 +8,7 @@ This project includes full **CRUD functionality**, **task filtering** (`All`, `C
 
 ### 🚀 Live Demo
 
-🔗 **[View the Live App on Netlify](https://enchanting-eclair-0f7663.netlify.app/)**
+🔗 **[View the Live App on Netlify](https://todolist-react-0.netlify.app/)**
 
 ---
 
